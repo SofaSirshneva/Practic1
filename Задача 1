@@ -1,10 +1,7 @@
 import math
 word=input()
-i=0
-for letter in word:
-    i+=1
 k=math.trunc((len(word)-1)/2)
-if(i%2==0):  
+if(len(word)%2==0):  
     print(word[k:k+2])
 else:
     print(word[k])
