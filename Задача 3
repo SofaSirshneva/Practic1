@@ -1,0 +1,7 @@
+boys = ['Peter', 'Alex', 'John', 'Arthur', 'Richard']
+girls = ['Kate', 'Liza', 'Kira', 'Emma', 'Trisha']
+ind=0
+if len(boys)==len(girls):
+    while ind < len(boys):
+        print(sorted(boys)[ind], ' и ', sorted(girls)[ind])
+        ind+=1
