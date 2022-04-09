@@ -1,0 +1,6 @@
+sum=0
+i=input('Введите число:')
+while i!= '0' : 
+    sum+=eval(i)
+    i=input('Введите число:')
+print('Sum = ', sum)
