@@ -1,7 +1,9 @@
-boys = ['Peter', 'Alex', 'John', 'Arthur', 'Richard']
-girls = ['Kate', 'Liza', 'Kira', 'Emma', 'Trisha']
+boys = [ 'Den','Danil', 'Kirill', 'Egor', 'Vova']
+girls = ['Sonya', 'Lena', 'Nastya', 'Vika', 'Katya']
 ind=0
 if len(boys)==len(girls):
     while ind < len(boys):
         print(sorted(boys)[ind], ' и ', sorted(girls)[ind])
         ind+=1
+else:
+    print('У одного человека не будет пары')
