@@ -1,0 +1,11 @@
+results = {
+'vk': {'revenue': 103, 'cost': 98}, \
+'yandex': {'revenue': 179, 'cost': 153}, \
+'facebook': {'revenue': 103, 'cost': 110}, \
+'adwords': {'revenue': 35, 'cost': 34}, \
+'twitter': {'revenue': 11, 'cost': 24}}
+ind=0
+for thing in results.values():
+    thing['ROI'] = "%.2f" % ((thing['revenue']/thing['cost']-1)*100)
+for key, value in results.items():
+    print("{0}: {1}".format(key,value))
