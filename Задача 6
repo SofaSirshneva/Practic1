@@ -1,0 +1,18 @@
+import array
+queries = [
+'смотреть сериалы онлайн', \
+'новости спорта', \
+'афиша кино', \
+'курс доллара', \
+'сериалы этим летом', \
+'курс по питону', \
+'сериалы про спорт']
+arr=array.array('i',)
+arr=[0]*len(queries)
+for thing in queries:
+    arr[len(thing.split())]+=1
+ind = 1
+while ind != len(queries):
+    if(arr[ind]!=0):
+        print('Поисковых запросов содержащих ', ind, " слов - %.2f" %(arr[ind]/len(queries)*100), '%')
+    ind+=1
